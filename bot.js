@@ -156,13 +156,13 @@ exports.start = function(SETUP) {
   };
 
   const UpdateEmbed = function() {
-    let dot = TICK_N % 2 === 0 ? 'LuxoryCityRP' : 'Roleplay';
+    let dot = TICK_N % 2 === 0 ? 'Arnhem' : 'Roleplay';
     let embed = new Discord.RichEmbed()
-    .setAuthor("LuxoryCityRP Server Status", "https://media.discordapp.net/attachments/743826480165027950/752421903376842752/logo_LuxoryCityRP.png?width=659&height=671")
+    .setAuthor("Arnhem Server Status", "https://cdn.discordapp.com/attachments/782746231171579955/785548373204664330/logo_rond.png")
     .setColor(16557663)
-    .setFooter(TICK_N % 2 === 0 ? '⚪ LuxoryCityRP' : '⚫ LuxoryCityRP')
+    .setFooter(TICK_N % 2 === 0 ? '⚪ Arnhem' : '⚫ Arnhem')
     .setTimestamp(new Date())
-    .addField('\n\u200b\nHoe kan je de server joinen?','Je kan de server joinen doormiddel van **game.luxorycityrp.ga** in te voeren bij Direct Connect. Onderaan staat de server status om te kijken hoeveel mensen er online zijn en in de wachtrij staan')
+    .addField('\n\u200b\nHoe kan je de server joinen?','Je kan de server joinen doormiddel van **cfx.re/join/493o5v** in te voeren bij Direct Connect. Onderaan staat de server status om te kijken hoeveel mensen er online zijn en in de wachtrij staan')
     if (STATUS !== undefined)
     {
       embed.addField(':warning: Actuele server status:',`${STATUS}\n\u200b\n`);
